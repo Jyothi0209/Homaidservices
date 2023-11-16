@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  body{
+    height: 100vh;
+    background-image: url(Screenshot\ \(152\).png);
+    
+    background-repeat: no-repeat;
+     background-size: cover;
+     overflow: hidden;
+
+  }
+  .icon-container {
+    position: absolute;
+    top: 0px; /* Adjust top position */
+    margin-left: -30px; /* Adjust left position */
+    /* margin-top: -50px; */
+    bottom: px;
+  }
+  
+  .icon-image {
+    width: 250px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .center{
+   
+    text-align: center;
+  }
+  nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 80px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    /* padding-left: 20px; */
+    padding-right: 60px;
+  }
+  nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+  }
+  .nav-content .toggle-btn,
+  .nav-content span a{
+    height: 60px;
+    width: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .nav-content .toggle-btn{
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-225deg);
+    transition: all 0.6s ease;
+  }
+  nav.open .toggle-btn{
+    transform: rotate(0deg);
+  }
+  .nav-content span{
+    position: absolute;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+  nav.open .nav-content span{
+    transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+    opacity: 1;
+  }
+  .nav-content span a{
+    text-decoration: none;
+    transform: rotate(45deg);
+  }
+  .nav-content span a i{
+    font-size: 24px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (360deg/ -8)));
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+  .nav-content span a:hover i{
+    opacity: 1;
+  }
+  .social-media {
+    position: absolute;
+    bottom: -70%;
+    right: 20px;
+    padding:20px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+  
+   }
+   
+   .social-media a {
+    font-size: 24px;
+    margin: 0 2px;
+    color: #333;
+    transition: 0.3s;
+    display: inline;
+    padding-bottom: 25px;
+
+   }
+   
+   .social-media a:hover {
+    color: #0077b6;
+   }
+
+  
