@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Star Rating Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Homaidservices Feedback</h1>
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget">
+        <input class="out" type="radio" name="rate" id="rate-5" />
+        <label for="rate-5" class="fas fa-star"></label>
+        <input class="out" type="radio" name="rate" id="rate-4" />
+        <label for="rate-4" class="fas fa-star"></label>
+        <input class="out" type="radio" name="rate" id="rate-3" />
+        <label for="rate-3" class="fas fa-star"></label>
+        <input class="out" type="radio" name="rate" id="rate-2" />
+        <label for="rate-2" class="fas fa-star"></label>
+        <input class="out" type="radio" name="rate" id="rate-1" />
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+          <header></header>
+          <div class="textarea">
+            <textarea
+              cols="30"
+              placeholder="Describe your experience.."
+            ></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container2">
+      <h1>Maidservice Feedback</h1>
+      <div class="post2">
+        <div class="text2">Thanks for rating us!</div>
+        <div class="edit2">EDIT</div>
+      </div>
+      <div class="star-widget2">
+        <input class="in" type="radio" name="rate2" id="rate2-5" />
+        <label for="rate2-5" class="fas fa-star"></label>
+        <input class="in" type="radio" name="rate2" id="rate2-4" />
+        <label for="rate2-4" class="fas fa-star"></label>
+        <input class="in" type="radio" name="rate2" id="rate2-3" />
+        <label for="rate2-3" class="fas fa-star"></label>
+        <input class="in" type="radio" name="rate2" id="rate2-2" />
+        <label for="rate2-2" class="fas fa-star"></label>
+        <input class="in" type="radio" name="rate2" id="rate2-1" />
+        <label for="rate2-1" class="fas fa-star"></label>
+        <form action="#" class="form">
+          <header></header>
+          <div class="textarea2">
+            <textarea
+              cols="30"
+              placeholder="Describe your experience.."
+            ></textarea>
+          </div>
+          <div class="btn2">
+            <button id="button" type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = () => {
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () => {
+          widget.style.display = "block";
+          post.style.display = "none";
+        };
+        return false;
+      };
+      const btn2 = document.querySelector("#button");
+      const post2 = document.querySelector(".post2");
+      const widget2 = document.querySelector(".star-widget2");
+      const editBtn2 = document.querySelector(".edit2");
+      btn2.onclick = () => {
+        widget2.style.display = "none";
+        post2.style.display = "block";
+        editBtn2.onclick = () => {
+          widget2.style.display = "block";
+          post2.style.display = "none";
+        };
+        return false;
+      };
+    </script>
+  </body>
+</html>
